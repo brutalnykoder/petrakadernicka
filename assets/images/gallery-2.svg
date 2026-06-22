@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1050">
+  <rect width="900" height="1050" fill="#d6c7bb"/>
+  <circle cx="450" cy="260" r="150" fill="#e7b995"/>
+  <path d="M270 250 C320 40 610 80 650 280 C690 500 560 620 450 660 C340 620 210 500 270 250Z" fill="#d4a04f"/>
+  <path d="M250 830 C320 700 580 700 650 830 L720 1050 H180Z" fill="#607466"/>
+  <text x="74" y="930" fill="#211b18" font-family="Arial, sans-serif" font-size="54" font-weight="700">Balayage</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1050">
+  <rect width="900" height="1050" fill="#f4ebe4"/>
+  <circle cx="450" cy="300" r="170" fill="#d8aa88"/>
+  <path d="M250 300 C250 120 650 120 650 300 C650 520 560 740 450 740 C340 740 250 520 250 300Z" fill="#5a342b"/>
+  <circle cx="450" cy="400" r="120" fill="#efc6a7"/>
+  <path d="M270 820 C330 690 570 690 630 820 L675 1050 H225Z" fill="#6d2f33"/>
+  <text x="80" y="930" fill="#211b18" font-family="Arial, sans-serif" font-size="54" font-weight="700">Farbenie</text>
+</svg>
