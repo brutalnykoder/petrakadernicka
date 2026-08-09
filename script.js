@@ -3,7 +3,6 @@ const config = {
   socials: {
     instagram: "https://www.instagram.com/petra_kadernicka/",
     facebook: "https://www.facebook.com/petra.dreskova.5",
-    tiktok: "https://www.tiktok.com/@petrakadernicka?lang=en",
   },
 };
 
