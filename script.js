@@ -1,3 +1,6 @@
+// ZMIZNI MI Z KÓDU
+// ZMIZNI MI Z KÓDU
+// ZMIZNI MI Z KÓDU
 const config = {
   email: "petrakadernickabusiness@gmail.com",
   socials: {
@@ -114,3 +117,6 @@ if (address) {
     }
   });
 }
+// ZMIZNI MI Z KÓDU
+// ZMIZNI MI Z KÓDU
+// ZMIZNI MI Z KÓDU
