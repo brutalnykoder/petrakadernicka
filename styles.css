@@ -237,6 +237,20 @@ h3 {
   line-height: 1.7;
 }
 
+.hero-content .promise {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 18px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.92rem;
+  font-weight: 700;
+  backdrop-filter: blur(10px);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -394,6 +408,54 @@ h3 {
   color: var(--rose);
 }
 
+.case-section {
+  background: linear-gradient(180deg, #fffdf9 0%, #fff4ed 100%);
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.case-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 28px 8px 28px 8px;
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(127, 41, 78, 0.1);
+}
+
+.case-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.case-card div {
+  padding: 24px;
+}
+
+.case-card span,
+.rating-badge {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: var(--mint);
+  color: var(--sage);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.case-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .gallery-section {
   background: linear-gradient(135deg, #241824, #4d2142 48%, #174d4b);
   color: var(--white);
@@ -468,6 +530,117 @@ h3 {
   margin: 0;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 700;
+}
+
+.reviews-section {
+  background: linear-gradient(135deg, #fff8f1 0%, #f0fbf6 100%);
+}
+
+.reviews-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 30px 10px 30px 10px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.reviews-panel h3 {
+  font-size: clamp(1.35rem, 2.5vw, 2.1rem);
+}
+
+.reviews-panel p {
+  max-width: 760px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1180px;
+  margin: 22px auto 0;
+}
+
+.review-card {
+  display: grid;
+  gap: 18px;
+  min-height: 210px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 26px 8px 26px 8px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 14px 34px rgba(127, 41, 78, 0.1);
+}
+
+.review-card::before {
+  content: "5 z 5";
+  width: fit-content;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--gold), var(--coral));
+  color: var(--white);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.review-meta {
+  display: grid;
+  gap: 4px;
+}
+
+.review-meta strong {
+  color: var(--ink);
+}
+
+.review-meta span {
+  color: var(--sage);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.review-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.faq-section {
+  background: #fffdf9;
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.faq-list details {
+  border: 1px solid var(--line);
+  border-radius: 22px 8px 22px 8px;
+  background: var(--white);
+  box-shadow: 0 10px 26px rgba(127, 41, 78, 0.08);
+}
+
+.faq-list summary {
+  padding: 18px 22px;
+  color: var(--wine);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.faq-list p {
+  margin: 0;
+  padding: 0 22px 20px;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .hours-layout,
@@ -609,6 +782,44 @@ h3 {
   padding: clamp(20px, 3vw, 34px);
 }
 
+.map-section {
+  background: #fffdf9;
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(260px, 360px);
+  gap: 20px;
+  max-width: 1180px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.map-layout iframe {
+  width: 100%;
+  min-height: 420px;
+  border: 0;
+  border-radius: 30px 10px 30px 10px;
+  box-shadow: var(--shadow);
+}
+
+.directions-card {
+  display: grid;
+  align-content: center;
+  gap: 14px;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 30px 10px 30px 10px;
+  background: linear-gradient(135deg, var(--wine), var(--sage));
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.directions-card p {
+  color: rgba(255, 255, 255, 0.84);
+  line-height: 1.7;
+}
+
 label {
   display: grid;
   gap: 8px;
@@ -672,6 +883,81 @@ textarea {
   font-weight: 800;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.mobile-cta {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 12;
+  display: none;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--rose), var(--coral));
+  color: var(--white);
+  font-weight: 800;
+  box-shadow: 0 16px 34px rgba(127, 41, 78, 0.28);
+}
+
+.simple-page {
+  min-height: 100vh;
+}
+
+.simple-layout {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.breadcrumbs a {
+  color: var(--wine);
+}
+
+.breadcrumbs a::after {
+  content: "/";
+  margin-left: 8px;
+  color: var(--muted);
+}
+
+.simple-card {
+  padding: clamp(28px, 5vw, 54px);
+  border: 1px solid var(--line);
+  border-radius: 30px 10px 30px 10px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow);
+}
+
+.simple-card h1 {
+  color: var(--ink);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.simple-card h2 {
+  margin-top: 28px;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+}
+
+.simple-card p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
 @media (max-width: 860px) {
   .nav-toggle {
     display: block;
@@ -714,12 +1000,21 @@ textarea {
 
   .intro,
   .hours-layout,
-  .contact-section {
+  .contact-section,
+  .map-layout {
     grid-template-columns: 1fr;
   }
 
   .services-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .service-card,
@@ -776,9 +1071,25 @@ textarea {
     display: block;
   }
 
+  .footer-links {
+    margin-top: 12px;
+  }
+
   .services-grid,
   .contact-form {
     grid-template-columns: 1fr;
+  }
+
+  .reviews-panel {
+    display: grid;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-cta {
+    display: flex;
   }
 
   .hours-list div {
